@@ -16,16 +16,19 @@ html, body {
     scroll-behavior: smooth;
 }
 
-.main-header {
+ .main-header {
+    width: 100%;
     background-color: var(--maincolor);
     background-size: cover;
-    margin-top: -40px;
+    margin: 25px, auto;
     padding-bottom: 40px;
-    padding-top: 0;
+    padding-top: 125px;
     background-blend-mode: multiply;
     text-align: center;
     border-bottom: 1px solid white;
-}
+} 
+
+
 
 
 .header-name {
@@ -38,6 +41,21 @@ html, body {
     padding: 10px;
     text-align: center;
     font-size: 4em;
+}
+
+@media screen and (max-width: 842px) {
+    .header-name {
+    font-size: 3em;
+    padding-top: 50px;
+    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-name {
+    font-size: 2em;
+    
+  }
 }
 
 .nav li {
@@ -61,7 +79,12 @@ html, body {
     text-align: center;
     font-size: 1.25em;
     border-bottom: 1px solid rgb(31, 31, 31);
-}
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--maincolor);
+} 
+
 
 .project-btn {
     display: inline;
@@ -112,7 +135,6 @@ html, body {
     padding: 20px 50px 50px 50px;
     border-radius: 8px;
     word-wrap: wrap;
-
 }
 
 .mouse-text {
@@ -233,7 +255,6 @@ a {
     height: 4em;
     margin: 1em;
     transition: transform 0.4s;
-    
 }
 
 .icons:hover {
