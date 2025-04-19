@@ -1,98 +1,157 @@
-<!--
-    Welcome to my portfolio! The original version of this website was one of the first projects I took on by myself. It has evolved so much since then, but I really have enjoyed playing around with it. I think it was the first time my wife really felt confident in the fact that I could do this for my career. I've come so far since the first iteration of the site and I can't wait to continue updating as my skill level increases! Thanks for reading :)
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Megan Pennington</title>
+    <title>Megan Starrington</title>
     <link rel="stylesheet" href="portfolio.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Staatliches&display=swap");
     </style>
     <meta
       name="description"
-      content="Megan Pennington web development portfolio website. Designed 100% by Megan Pennington using VS Code."
+      content="Megan Starrington web dev portfolio website"
     />
-
-    <!--credit to Cole Bemis for Feather Icons.-->
   </head>
   <body>
     <header id="head" class="main-header">
       <nav class="main-nav nav">
         <section class="stat-nav">
           <ul>
-            <li class="header-name">Megan Pennington</li>
-            <br class="hidden-ss">
+            <li class="header-name">Megan Starrington</li>
             <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </section>
       </nav>
-      
-      <!-- <div>
-                <button class="btn projects-btn" type="button"><a class="btn-text" href="projects.html" >View Projects</a></button>
-            </div>
-        -->
     </header>
     <main>
       <div>
-        <h1 class="main-intro">
-          Front End Web Developer with a passion for learning, innovation, and
-          excellence.
-        </h1>
+        <h1 class="content-heading">Latest Projects</h1>
       </div>
-      <span id="skills">
-      </span>
-      <div id="skills">
-        <h1 class="content-title skill-header">Skills</h1>
-        <p class="mouse-text">mouse over the icons!</p>
-        <div>
-          <button id="html" class="icons" type="button">
-            <img src="/images/html5.png" />
-          </button>
-          <button class="icons"><img src="/images//css.png" /></button>
-          <button class="icons"><img src="/images//javascript.png" /></button>
-          <button id="html" class="icons" type="button">
-            <img src="/images/csharp.png" />
-          </button>
-          <button class="icons"><img src="/images//vscode.png" /></button>
-          <button class="icons"><img src="/images//vs.png" /></button>
-          <button class="icons"><img src="/images//git.png"></button>
-          <!--
-                <button class="icons"><img src="/images//figma.png"></button>-->
-          <button class="icons"><img src="/images//photoshop.png" /></button>
-          <button class="icons"><img src="/images//msoffice.png" /></button>
-        </div>
-      </div>
-      <span id="about">
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-      </span>
-      <container class="section-container">
-        <div id="about" class="main-content">
-          <h2 class="content-title">About Me</h2>
-          <p>
-            Growing up, Megan was always labeled as a creative-type. This lead
-            her to believe she could only set her ambitions on creative careers
-            and hobbies. As she grew and discovered more, Megan realized that
-            her true passions lie with analytical and investigative endeavors.
-            Through this discovery, Megan set her sights on programming. She
-            quickly discovered that the two worlds (both creative and
-            structured) did not have to function separately, but could come
-            together in a vibrant way. This is what lead Megan to the world of
-            Web Development.
+      <container class="project-0 project-container">
+         <div>
+          <h3 class="project-title">Virtual Bookshelf</h3>
+          <img class="project-img" src="/images/virtualbookshelf.png" />
+          <p class="project-description">
+            <b>Virtual bookshelf built using React with TypeScript and the google books API. Server by Can Code
+Communities. render.com may take a moment to load.<br><br>
+(Username: <i>hermione</i> Password: <i>granger</i>)</b>
           </p>
+          <span class="project-icon-element">
+            <img class="project-icons" src="/images/react.png" />
+            <img class="project-icons" src="/images/typescript.png" />
+          </span>
+          <button
+            class="btn link-btn"
+            type="button"
+          >
+            <a target="_blank" href="https://megan-bookstore.onrender.com/">Live Project</a> 
+          </button>
+          <button
+            class="btn link-btn"
+            type="button"
+          >
+            <a target="_blank" href="https://github.com/Megpen97/BookStoreProject">Code</a> 
+          </button>
         </div>
       </container>
+      <container class="project-1 project-container">
+          <div>
+          <h3 class="project-title">Retro Board</h3>
+          <img class="project-img" src="images/retro-board.png" />
+
+          <p class="project-description">
+            <b
+              >Simple Retro Board Project to track action items and scrum related feedback. Built using React. Stores data across sessions.</b
+            >
+          </p>
+          <span class="project-icon-element">
+            <img class="project-icons" src="/images/react.png" />
+          </span>
+          <button class="btn link-btn" type="button">
+            <a
+              target="_blank"
+              href="https://megpen97.github.io/Retro-Board-Project/"
+              >Live Project</a
+            >
+          </button>
+          <button class="btn link-btn" type="button">
+            <a target="_blank" href="https://github.com/Megpen97/Retro-Board-Project"
+              >Code</a
+            >
+          </button>
+        </div>
+      </container>
+
+      <container class="project-2 project-container">
+        <div>
+          <h3 class="project-title">Calculator</h3>
+          <img class="project-img" src="images/calculator.png" />
+          <p class="project-description">
+            <b
+              >Simple Calculator Web Application. Performs arithmetic operations
+              on both whole numbers and decimals. Coded using HTML, CSS, and
+              JavaScript.</b
+            >
+          </p>
+          <span class="project-icon-element">
+            <img class="project-icons" src="/images/html5.png" />
+            <img class="project-icons" src="/images/css.png" />
+            <img class="project-icons" src="/images/javascript.png" />
+          </span>
+          <button class="btn link-btn" type="button">
+            <a
+              target="_blank"
+              href="https://megpen97.github.io/calculator/index.html"
+              >Live Project</a
+            >
+          </button>
+          <button class="btn link-btn" type="button">
+            <a target="_blank" href="https://github.com/Megpen97/calculator"
+              >Code</a
+            >
+          </button>
+        </div>
+      </container>
+      <container class="project-3 project-container">
+         <div>
+          <h3 class="project-title">To-Do List</h3>
+          <img class="project-img" src="/images/todo.png" />
+          <p class="project-description">
+            <b>Simple To-Do List with local storage. Allows you to check off the
+            items you have completed as well as filter through your completed
+            and incompleted items.</b>
+          </p>
+          <span class="project-icon-element">
+            <img class="project-icons" src="/images/html5.png" />
+            <img class="project-icons" src="/images/css.png" />
+            <img class="project-icons" src="/images/javascript.png" />
+          </span>
+          <button
+            class="btn link-btn"
+            type="button"
+          >
+            <a target="_blank" href="https://megpen97.github.io/To-Do-List/">Live Project</a> 
+          </button>
+          <button
+            class="btn link-btn"
+            type="button"
+          >
+            <a target="_blank" href="https://github.com/Megpen97/To-Do-List.git">Code</a> 
+          </button>
+        </div>
+      </container>
+      <!--
+        <container class="project-3 project-container">
+            <div>
+                <h3 class="project-title">Project Three</h3>
+                <img class="project-img" src="/images/placeholder.jpg">
+                <p class="project-description">This is where the description will go for projects. I want this to be dynamic and be able to stretch well. The biggest descriptors will be in the README files on github.</p>
+                <button class="btn link-btn" type="button">Live Project</button>
+                <button class="btn link-btn" type="button">Code</button>
+            </div>
+        </container>
+    -->
       <span>
         <a href="#head" alt="back to top arrow"
           ><img class="top-btn btn" src="/feather-white/arrow-up-circle.svg"
@@ -103,9 +162,8 @@
       <div class="footer-items">
         <span class="footer-social">My Social Platforms:</span>
         <div>
-          <!--TODO fix github link-->
           <span>
-            <a target="_blank" href="http://github.com/megpen97"
+            <a target="_blank" href="https://github.com/Megpen97"
               ><img
                 class="footer-icon"
                 src="/feather-white/github.svg"
@@ -115,7 +173,7 @@
           <span>
             <a
               target="_blank"
-              href="http://www.linkedin.com/in/megan-pennington-043996153"
+              href="https://www.linkedin.com/in/megan-starrington-043996153/"
               ><img class="footer-icon" src="/feather-white/linkedin.svg"
             /></a>
           </span>
